@@ -10,3 +10,8 @@ function increaseRankBy(n){
     upRank[i].innerHTML = ((parseInt(upRank[i].innerHtml))+n)
   }
 }
+function deepestChild(){
+  var deepChild = document.getElementById('grand-node').querySelectorAll('div')
+  return deepChild[deepChild.length-1]
+  
+}
